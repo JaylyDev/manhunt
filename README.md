@@ -13,6 +13,7 @@ You activate the Add-on on a brand new world. There is one Speedrunner and one H
 ## Downloads
 Version | Link | Changelog
 ----|----|----|
+Release 1.6.0 | [Download](https://up-to-down.net/329333/mcmh160) | [Release 1.6.0](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Release%201.6.0.md)
 Beta 1.5.4 | [Download](https://cdn.discordapp.com/attachments/734424410668138576/853232013343457320/Beta_1.5.4.mcpack) | [Patch 1.5.4](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Patch%201.5.4.md)
 Beta 1.5.3 | [Download](https://cdn.discordapp.com/attachments/734424410668138576/853014317656703036/manhunt-beta.mcpack)| [Patch 1.5.3](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Patch%201.5.3.md)
 Beta 1.5.2 | [Download](https://cdn.discordapp.com/attachments/571487722934370314/850397646538932284/manhunt-beta.mcpack) | First beta release of v1.6
@@ -29,8 +30,6 @@ Developer:
 Special thanks to:
 - [JacobReal](https://mcpedl.com/user/dreamcraft-studios/)
 - [r4isen1920](https://mcpedl.com/user/r4isen1920/)
-- [skybird23333](https://mcpedl.com/user/skybird23333/)
-- [justAsh](https://mcpedl.com/user/pixelpolydigital/)
 - [RobotPantaloons](https://mcpedl.com/user/RobotPantaloons/)
 
 ## Questions, Bugs and Feedbacks
