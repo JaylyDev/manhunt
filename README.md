@@ -1,7 +1,7 @@
 # Minecraft Manhunt (Bedrock)
 **https://mcpedl.com/minecraft-manhunt/ - Add-on link**
 
-Latest Add-On Version: **1.6.0**
+Latest Add-On Version: **1.6.1**
 
 ## Description
 You activate the Add-on on a brand new world. There is one Speedrunner and one Hunter (or more). You should play this game in complete **survival vanilla Minecraft**. 
@@ -13,6 +13,7 @@ You activate the Add-on on a brand new world. There is one Speedrunner and one H
 ## Downloads
 Version | Link | Changelog
 ----|----|----|
+Beta 1.6.1 | [Download](https://cdn.discordapp.com/attachments/571863283657867294/863670881233272842/manhunt-v1.6.1.mcaddon) | [Beta 1.6.1](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Beta%201.6.1.md)
 Release 1.6.0 | [Download](https://up-to-down.net/329333/mcmh160) | [Release 1.6.0](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Release%201.6.0.md)
 Beta 1.5.4 | [Download](https://cdn.discordapp.com/attachments/734424410668138576/853232013343457320/Beta_1.5.4.mcpack) | [Patch 1.5.4](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Patch%201.5.4.md)
 Beta 1.5.3 | [Download](https://cdn.discordapp.com/attachments/734424410668138576/853014317656703036/manhunt-beta.mcpack)| [Patch 1.5.3](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Patch%201.5.3.md)
