@@ -1,5 +1,5 @@
 # Release 1.6.0
-> Release Date: pending
+> Release Date: July 2021
 
 The first release for Minecraft Manhunt 1.6
 
