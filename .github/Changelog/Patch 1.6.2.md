@@ -1,4 +1,4 @@
-# Patch 1.6.3
+# Patch 1.6.2
 > Release Date: 12/7/2021
 
 Patch release for Manhunt v1.6.1

@@ -4,7 +4,7 @@
 3rd beta release for Manhunt v1.6
 
 ## Download:
-[Manhunt v1.6.3](https://cdn.discordapp.com/attachments/571863283657867294/864080875637309440/manhunt-v1.6.3.mcaddon)
+[Manhunt v1.6.3](https://cdn.discordapp.com/attachments/571863283657867294/867357522393563146/manhunt-v1.6.3.mcaddon)
 
 ## Changelog
 - You can now change speedrunner in every gamemode excludes terminator mode
