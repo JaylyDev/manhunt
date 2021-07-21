@@ -1,5 +1,5 @@
-#Assign players roles
-tag @s add speedrunner
+## Start the manhunt
+execute @a[tag=host,scores={speedrunners=..0}] ~~~ tag @s add speedrunner
 tag @a[tag=!speedrunner] add hunter
 tag @a add game_is_running
 

@@ -4,6 +4,8 @@ scoreboard objectives add compass_cd dummy
 scoreboard objectives add time_t dummy
 scoreboard objectives add time_s dummy
 scoreboard objectives add time_m dummy
+scoreboard objectives add speedrunners dummy
+scoreboard objectives add hunters dummy
 clear @a
 clearspawnpoint @a
 setworldspawn ~ ~ ~
