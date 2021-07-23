@@ -246,7 +246,7 @@
       },
       "manhunt:speedrunner_death": {
         "run_command": {
-          "command": [ "function system/ingame/speedrunnerdeath" ]
+          "command": [ "function system/ingame/speedrunnerdeath", "tag @s remove speedrunner" ]
         }
       }
     }

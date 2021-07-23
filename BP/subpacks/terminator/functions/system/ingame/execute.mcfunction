@@ -8,4 +8,11 @@ execute @a[tag=host,tag=game_is_running] ~ ~ ~ tag @e[type=entity:terminator] ad
 execute @a[tag=host,tag=game_is_running,scores={terminators=..0}] ~ ~ ~ summon entity:terminator ~ ~ ~
 effect @e[type=entity:terminator] regeneration 1 255 true
 effect @a[tag=spectate] invisibility 10 255 true
-execute @a[tag=spectate] ~~~ function system/ingame/speedrunnerdeath
+gamemode a @a[tag=game_is_running,tag=spectate]
+
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§b§lGame §r>> §eAll speedrunners died! Hunters won!"}]}
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~ ~ ~ tag @e[type=entity:terminator] remove hunter
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~ ~ ~ tag @a[tag=host] add end_game
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~ ~ ~ tag @a remove game_is_running
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~ ~ ~ tag @a remove spectate
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~ ~ ~ effect @a invisibility 0

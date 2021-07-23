@@ -24,7 +24,7 @@ scoreboard players set @a compass_cd 0
 scoreboard players set @a[tag=host,scores={time_t=!0..20}] time_t 0
 scoreboard players set @a[tag=host,scores={time_t=!0..60}] time_s 0
 scoreboard players set @a[tag=host,scores={time_t=!0..60}] time_m 60
-replaceitem entity @a[tag=hunter,tag=game_is_running] slot.weapon.mainhand 0 compass 1 0 {"minecraft:item_lock":{"mode": "lock_in_slot"}, "minecraft:keep_on_death":{}}
+replaceitem entity @a[tag=hunter,tag=game_is_running] slot.hotbar 0 compass 1 0 {"minecraft:item_lock":{"mode": "lock_in_slot"}, "minecraft:keep_on_death":{}}
 gamerule pvp true
 gamerule falldamage true
 gamerule drowningdamage true

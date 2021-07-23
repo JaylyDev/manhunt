@@ -11,6 +11,7 @@
 > Method: (DO BEFORE START THE GAME)
 `/tag [player] add speedrunner`
 - The add-on does not require Additional Modding Capibilities to activate
+- Issue about compass will not appear in inventory when activating in Minecraft Juggernaut has been fixed
 
 ## Installations:
 This Add-On is released for Minecraft version 1.17, but there is a chance of it being compatible for Minecraft version 1.16.220+

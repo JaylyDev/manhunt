@@ -21,12 +21,12 @@ execute @a[tag=host] ~~~ spreadplayers ~ ~ 0 10 @a
 execute @a[tag=host] ~~~ setworldspawn ~ ~ ~
 execute @a[tag=host] ~~~ spawnpoint @a ~ ~ ~
 scoreboard players set @a compass_cd 0
-replaceitem entity @a[tag=hunter,tag=game_is_running] slot.weapon.mainhand 0 compass 1 0 {"minecraft:item_lock":{"mode": "lock_in_slot"}, "minecraft:keep_on_death":{}}
+replaceitem entity @a[tag=hunter,tag=game_is_running] slot.hotbar 0 compass 1 0 {"minecraft:item_lock":{"mode": "lock_in_slot"}, "minecraft:keep_on_death":{}}
 replaceitem entity @a[tag=hunter,tag=game_is_running] slot.armor.head 0 diamond_helmet 1 0 {"minecraft:keep_on_death":{}}
 replaceitem entity @a[tag=hunter,tag=game_is_running] slot.armor.chest 0 diamond_chestplate 1 0 {"minecraft:keep_on_death":{}}
 replaceitem entity @a[tag=hunter,tag=game_is_running] slot.armor.legs 0 diamond_leggings 1 0 {"minecraft:keep_on_death":{}}
 replaceitem entity @a[tag=hunter,tag=game_is_running] slot.armor.feet 0 diamond_boots 1 0 {"minecraft:keep_on_death":{}}
-replaceitem entity @a[tag=hunter,tag=game_is_running] slot.weapon.mainhand 1 diamond_sword 1 0 {"minecraft:keep_on_death":{}}
+replaceitem entity @a[tag=hunter,tag=game_is_running] slot.hotbar 1 diamond_sword 1 0 {"minecraft:keep_on_death":{}}
 gamerule pvp true
 gamerule falldamage true
 gamerule drowningdamage true
