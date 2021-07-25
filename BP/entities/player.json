@@ -143,7 +143,7 @@
       "minecraft:conditional_bandwidth_optimization": {
       },
       "minecraft:scaffolding_climber": {},
-      "minecraft:damage_sensor":{ //shoutout to bedrock wiki (https://wiki.bedrock.dev/tutorials/disabling-team-damage)
+      "minecraft:damage_sensor":{ //shoutout to bedrock wiki (https://old-wiki.bedrock.dev/tutorials/disabling-team-damage)
         "triggers":[
            { //if you already have a damage sensor, simply copy this object into the "triggers" array;
               "on_damage":{
@@ -162,8 +162,9 @@
                          ]
                        }, //please do not ask me why do i add speedrunners deals damage false to speedrunners when there can be only 1 lmao
                        {
-                         "all_of":[
-                           {"test":"has_tag", "operator": "!=", "value":"game_is_running"}
+                         "any_of":[
+                           {"test":"has_tag", "operator": "!=", "value":"game_is_running"},
+                           {"test":"has_tag", "operator": "==", "value":"spectate"}
                          ]
                        } // this filter is used for lobby stage
                     ]

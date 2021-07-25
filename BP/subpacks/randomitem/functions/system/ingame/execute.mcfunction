@@ -24,3 +24,14 @@ execute @a[tag=game_is_running,scores={item_cd=2401..}] ~ ~ ~ scoreboard players
 execute @a[tag=game_is_running,scores={item_cd=2300}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§c§l>>§rItem will despawn in 5 seconds!"}]}
 execute @a[tag=game_is_running,scores={item_cd=2200}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§c§l>>§rItem now despawns until next random item event (2 minutes)!"}]}
 execute @a[tag=game_is_running,scores={item_cd=..2200}] ~ ~ ~ kill @e[type=item]
+
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ tag @a[tag=host] add end_game
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ tellraw @a {"rawtext":[{"text":"§b§lGame §r>> §eSpeedrunner died! Hunters won!"}]}
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ title @a[tag=hunter] subtitle §eCongratulations!
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ title @a[tag=hunter] title §eYou won!
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ title @a[tag=speedrunner] subtitle §cYou lost!
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ title @a[tag=speedrunner] title 
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ gamemode 2 @a
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ tag @a remove game_is_running
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ tag @a remove hunter
+execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ tag @a remove speedrunner

@@ -13,3 +13,4 @@ execute @a[tag=!game_is_running,tag=speedrunner] ~~~ tag @s remove pre_hunter
 execute @a[scores={speedrunners=1..},tag=!game_is_running,tag=host] ~~~ tag @s add pre_hunter
 execute @a[scores={speedrunners=..0},tag=!game_is_running,tag=host] ~~~ tag @s remove pre_hunter
 execute @a[tag=pre_hunter] ~ ~ ~ execute @a[tag=host] ~ ~ ~ scoreboard players add @s hunters 1
+execute @a[tag=!game_is_running] ~~~ tag @a remove spectate
