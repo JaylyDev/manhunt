@@ -8,6 +8,8 @@
 import os
 import inspect
 import zipfile
+import tkinter
+from tkinter import messagebox
 
 def jt_zipdir_execution(output_filename, source_dir): # Credit to https://stackoverflow.com/a/17080988
     global zipname
@@ -25,6 +27,10 @@ def jt_zipdir_execution(output_filename, source_dir): # Credit to https://stacko
                         arcname = os.path.join(os.path.relpath(root, relroot), file)
                         zip.write(filename, arcname)
 
+root = tkinter.Tk()
+root.withdraw()
+messagebox.showerror("Manhunt Zipdir", "This program is no longer compatible with Manhunt v1.6 or above")
+quit
 current_path = inspect.getfile(inspect.currentframe()) #Current directory
 current_filename = os.path.basename(__file__)
 current_path = str(current_path).replace("\\" + str(current_filename), "")

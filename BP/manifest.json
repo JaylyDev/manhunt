@@ -1,18 +1,18 @@
 {
 	"format_version": 2,
 	"header": {
-		"description": "Addon By §eJayly§r\nhttps://mcpedl.com/minecraft-manhunt\nVersion: 1.6.5 [Beta]",
+		"description": "Addon By §eJayly§r\nhttps://mcpedl.com/minecraft-manhunt\nVersion: 1.6.6",
 		"name": "Minecraft Manhunt [BP]",
 		"uuid": "1340e32a-ccf2-4f2f-b84d-c6bf3a6795b6",
-		"version": [ 1, 7, 0 ], // this variable represents addon version
+		"version": [ 1, 6, 6 ], // this variable represents addon version
 		"min_engine_version": [ 1, 16, 220 ]
 	},
 	"modules": [
 		{
-			"description": "Addon By §eJayly§r\nhttps://mcpedl.com/minecraft-manhunt\nVersion: 1.6.5.6 [Beta]",
+			"description": "Addon By §eJayly§r\nhttps://mcpedl.com/minecraft-manhunt\nVersion: 1.6.6.0",
 			"type": "data",
 			"uuid": "a5684d11-d349-4d74-9343-36194e8e75cb",
-			"version": [ 1, 7, 0 ]
+			"version": [ 1, 6, 6 ]
 		}
 	],
 	"subpacks": [
@@ -45,7 +45,7 @@
 	"dependencies": [
 		{
 			"uuid": "fc469f4b-29f9-4b13-9e8f-5130e3b9cd90",
-			"version": [ 1, 7, 0 ]
+			"version": [ 1, 6, 6 ]
 		}
 	],
 	"metadata": {
