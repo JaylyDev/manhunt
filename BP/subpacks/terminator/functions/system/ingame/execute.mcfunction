@@ -6,7 +6,6 @@ execute @a[tag=host] ~ ~ ~ scoreboard players set @s speedrunners 0
 execute @a[tag=speedrunner] ~ ~ ~ execute @a[tag=host] ~ ~ ~ scoreboard players add @s speedrunners 1
 execute @a[tag=host,tag=game_is_running] ~ ~ ~ tag @e[type=entity:terminator] add game_is_running
 execute @a[tag=host,tag=game_is_running,scores={terminators=..0}] ~ ~ ~ summon entity:terminator ~ ~ ~
-effect @e[type=entity:terminator] regeneration 1 255 true
 effect @a[tag=spectate] invisibility 10 255 true
 gamemode a @a[tag=game_is_running,tag=spectate]
 
