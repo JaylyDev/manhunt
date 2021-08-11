@@ -146,14 +146,14 @@
       "minecraft:damage_sensor":{ //shoutout to bedrock wiki (https://old-wiki.bedrock.dev/tutorials/disabling-team-damage)
         "triggers":[
            { //if you already have a damage sensor, simply copy this object into the "triggers" array;
-              "on_damage":{
-                 "filters":{
-                    "any_of":[
-                       {
-                         "all_of":[
-                           {"test":"has_tag", "value":"hunter" }, //Does the player have this tag?
-                           {"test":"has_tag", "subject":"other", "value":"hunter" } //If so, does the entity they're trying to hurt have this tag?
-                         ]
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {"test":"has_tag", "value":"hunter" }, //Does the player have this tag?
+                      {"test":"has_tag", "subject":"other", "value":"hunter" } //If so, does the entity they're trying to hurt have this tag?
+                    ]
                        },
                        {
                          "all_of":[
@@ -171,7 +171,22 @@
                  }
               },
               "deals_damage":false //if any of these filters evaluate to true in the current attack interaction, the target will not be hurt.
-           }
+           },
+           {
+             "on_damage": {
+              "filters":{
+                "all_of":[
+                  { "test": "has_tag", "value": "speedrunner" },
+                  { "test": "has_tag", "value": "game_is_running" },
+                  { "test": "has_tag", "subject": "other", "value": "hunter" },
+                  { "test": "has_tag", "subject": "other", "value": "game_is_running" }
+                ]
+              },
+              "event": ""
+             },
+            "damage_multiplier": 32767,
+            "deals_damage": true
+          }
         ]
       },
       "minecraft:environment_sensor": {
@@ -252,7 +267,7 @@
         "filters":{
           "all_of": [
             { "test": "is_family", "subject": "self", "value": "player" },
-            { "test": "has_tag", "subject": "self", "operator": "==", "value": "hunter" },
+            { "test": "has_tag", "subject": "self", "operator": "==", "value": "speedrunner" },
             { "test": "has_tag", "subject": "self", "operator": "==", "value": "game_is_running" }
           ]
         },

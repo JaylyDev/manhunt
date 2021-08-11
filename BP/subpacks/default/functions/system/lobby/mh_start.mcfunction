@@ -21,8 +21,10 @@ execute @a[tag=host] ~~~ spreadplayers ~ ~ 0 10 @a
 execute @a[tag=host] ~~~ setworldspawn ~ ~ ~
 execute @a[tag=host] ~~~ spawnpoint @a ~ ~ ~
 scoreboard players set @a compass_cd 0
+scoreboard players set @s[tag=host,scores={graceperiod=1}] gptimer 1200
 replaceitem entity @a[tag=hunter,tag=game_is_running] slot.hotbar 0 compass 1 0 {"minecraft:item_lock":{"mode": "lock_in_slot"}, "minecraft:keep_on_death":{}}
-gamerule pvp true
+execute @a[tag=host,scores={graceperiod=0}] ~~~ gamerule pvp true
+execute @a[tag=host,scores={graceperiod=1}] ~~~ gamerule pvp false
 gamerule falldamage true
 gamerule drowningdamage true
 gamerule firedamage true

@@ -13,6 +13,9 @@ You activate the Add-on on a brand new world. There is one Speedrunner and one H
 ## Downloads
 Version | Link | Changelog
 ----|----|----|
+Release 1.7.1.15 | [Download](https://linkvertise.com/329333/mcmh?o=sharing) | [Release 1.7.1.15](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Release%201.7.1.md)
+Beta 1.7.1.5 | [Download](https://cdn.discordapp.com/attachments/571863283657867294/874241176000159744/manhunt_v1.7.1.mcaddon)
+Beta 1.7.0 | Download [RP](https://cdn.discordapp.com/attachments/571863283657867294/872084025580347392/manhunt_v1.7.0.2.mcaddon) & [BP](https://cdn.discordapp.com/attachments/734424410668138576/872115908712222790/mcmhbp.mcpack) | [Beta 1.7.0](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Beta%201.7.0.md)
 Patch 1.6.6 | [Download](https://file-link.net/329333/mcmh) | [Patch 1.6.6](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Patch%201.6.6.md)
 Beta 1.6.5 | [Download](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Beta%201.6.5.md) | [Beta 1.6.5](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Beta%201.6.5.md)
 Beta 1.6.4 | [Download](https://cdn.discordapp.com/attachments/571863283657867294/868009633325928478/manhunt-v1.6.4.13.mcaddon) | [Beta 1.6.4](https://github.com/JaylyDev/manhunt/blob/main/.github/Changelog/Beta%201.6.4.md)

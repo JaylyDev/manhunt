@@ -5,12 +5,15 @@ scoreboard objectives add item_cd dummy
 scoreboard objectives add random_item dummy
 scoreboard objectives add speedrunners dummy
 scoreboard objectives add hunters dummy
+scoreboard objectives add graceperiod dummy
+scoreboard objectives add gptimer dummy
 clear @a
 clearspawnpoint @a
 setworldspawn ~ 64 ~
 spawnpoint @a ~ 64 ~
 spreadplayers ~ ~ 1 10 @a
 gamemode a @a
+scoreboard players set @s graceperiod 0
 
 # changes gamerule settings
 gamerule naturalregeneration true

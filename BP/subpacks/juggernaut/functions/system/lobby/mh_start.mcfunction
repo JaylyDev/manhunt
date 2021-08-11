@@ -27,7 +27,9 @@ replaceitem entity @a[tag=hunter,tag=game_is_running] slot.armor.chest 0 diamond
 replaceitem entity @a[tag=hunter,tag=game_is_running] slot.armor.legs 0 diamond_leggings 1 0 {"minecraft:keep_on_death":{}}
 replaceitem entity @a[tag=hunter,tag=game_is_running] slot.armor.feet 0 diamond_boots 1 0 {"minecraft:keep_on_death":{}}
 replaceitem entity @a[tag=hunter,tag=game_is_running] slot.hotbar 1 diamond_sword 1 0 {"minecraft:keep_on_death":{}}
-gamerule pvp true
+scoreboard players set @s[tag=host,scores={graceperiod=1}] gptimer 1200
+execute @a[tag=host,scores={graceperiod=0}] ~~~ gamerule pvp true
+execute @a[tag=host,scores={graceperiod=1}] ~~~ gamerule pvp false
 gamerule falldamage true
 gamerule drowningdamage true
 gamerule firedamage true

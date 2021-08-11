@@ -23,9 +23,12 @@ execute @a[tag=host] ~~~ setworldspawn 0 64 0
 execute @a[tag=host] ~~~ spawnpoint @a 0 64 0
 scoreboard players set @a compass_cd 0
 scoreboard players set @a[tag=host] item_cd 2200
-gamerule pvp true
+scoreboard players set @s[tag=host,scores={graceperiod=1}] gptimer 1200
+execute @a[tag=host,scores={graceperiod=0}] ~~~ gamerule pvp true
+execute @a[tag=host,scores={graceperiod=1}] ~~~ gamerule pvp false
 gamerule falldamage true
 gamerule drowningdamage true
 gamerule firedamage true
 effect @a instant_health 0 0 true
 effect @a strength 0 0 true
+execute @a ~~~ detect ~~-1~ air 0 effect @s slow_falling 30 0 true

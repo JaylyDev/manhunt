@@ -10,6 +10,11 @@ execute @a[tag=host,tag=game_is_running,scores={time_m=-1}] ~~~ function system/
 execute @a[tag=host,tag=game_is_running,scores={time_s=10..60}] ~~~ titleraw @a[tag=game_is_running] actionbar {"rawtext":[{"text":"§cTime: §r§l"}, {"score":{"name":"@a[tag=host,tag=game_is_running]","objective":"time_m"}}, {"text":":"}, {"score":{"name":"@a[tag=host,tag=game_is_running]","objective":"time_s"}}]}
 execute @a[tag=host,tag=game_is_running,scores={time_s=0..9}] ~~~ titleraw @a[tag=game_is_running] actionbar {"rawtext":[{"text":"§cTime: §r§l"}, {"score":{"name":"@a[tag=host,tag=game_is_running]","objective":"time_m"}}, {"text":":0"}, {"score":{"name":"@a[tag=host,tag=game_is_running]","objective":"time_s"}}]}
 
+execute @a[tag=host,tag=game_is_running,scores={graceperiod=1,gptimer=1200}] ~~~ tellraw @a {"rawtext":[{"text": "Enabling §3PvP§r in §31 minute"}]}
+execute @a[tag=host,tag=game_is_running,scores={graceperiod=1,gptimer=0}] ~~~ tellraw @a {"rawtext":[{"text": "§3PvP§r is now enabled"}]}
+execute @a[tag=host,tag=game_is_running,scores={graceperiod=1,gptimer=0}] ~~~ gamerule pvp true
+scoreboard players add @a[tag=host,tag=game_is_running,scores={graceperiod=1,gptimer=0..1200}] gptimer -1
+
 execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ tag @a[tag=host] add end_game
 execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ tellraw @a {"rawtext":[{"text":"§b§lGame §r>> §eSpeedrunner died! Hunters won!"}]}
 execute @a[tag=host,tag=game_is_running,scores={speedrunners=..0}] ~~~ title @a[tag=hunter] subtitle §eCongratulations!
