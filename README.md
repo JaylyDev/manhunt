@@ -1,7 +1,7 @@
 # Minecraft Manhunt (Bedrock)
 **https://mcpedl.com/minecraft-manhunt/ - Add-on link**
 
-Latest Add-On Version: **1.6.6**
+Latest Add-On Version: **1.7.1.16**
 
 ## Description
 You activate the Add-on on a brand new world. There is one Speedrunner and one Hunter (or more). You should play this game in complete **survival vanilla Minecraft**. 
