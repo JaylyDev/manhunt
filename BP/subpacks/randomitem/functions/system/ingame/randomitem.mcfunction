@@ -114,4 +114,4 @@ give @a[scores={random_item=111}] obsidian 2304
 give @a[scores={random_item=112}] wood 2304
 give @a[scores={random_item=113}] black_concrete 2304
 give @a[scores={random_item=114}] pufferfish_bucket 2304
-tellraw @a {"rawtext":[{"text": "§6§l>>RANDOM ITEM HAS ARRIVED
+tellraw @a {"rawtext":[{"text": "§6§l>>RANDOM ITEM HAS ARRIVED!"}]}
