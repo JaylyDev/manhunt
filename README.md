@@ -40,6 +40,7 @@ Special thanks to:
 - [JacobReal](https://mcpedl.com/user/dreamcraft-studios/)
 - [r4isen1920](https://mcpedl.com/user/r4isen1920/)
 - [RobotPantaloons](https://mcpedl.com/user/RobotPantaloons/)
+- [Dylised]
 
 ## Questions, Bugs and Feedbacks
 Want to report a bug or suggest new features for the addon? [Click Here](https://github.com/JaylyDev/manhunt/issues/new/choose)
