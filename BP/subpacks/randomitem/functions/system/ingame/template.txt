@@ -4,7 +4,7 @@ give @a[scores={random_item=}] acacia_pressure_plate
 give @a[scores={random_item=}] acacia_stairs
 give @a[scores={random_item=}] activator_rail
 give @a[scores={random_item=}] amethyst_block
-give @a[scores={random_item=6}] andesite_stairs
+give @a[scores={random_item=}] andesite_stairs
 give @a[scores={random_item=}] anvil
 give @a[scores={random_item=}] apple
 give @a[scores={random_item=}] armor_stand
@@ -108,7 +108,7 @@ give @a[scores={random_item=}] sand
 give @a[scores={random_item=}] water_bucket
 give @a[scores={random_item=}] bucket
 give @a[scores={random_item=}] shield
-give @a[scores={random_item}] end_crystal
+give @a[scores={random_item=}] end_crystal
 give @a[scores={random_item=}] obsidian
 give @a[scores={random_item=}] wood
 give @a[scores={random_item=}] black_concrete
