@@ -3,6 +3,19 @@
 
 Latest Add-On Version: **1.7.1.16**
 
+# Announcement
+hi, i've decided that i will stop developing this manhunt addon.
+
+It's been over a year since the add-on first release and the trend starts fading away.
+
+I have other interest eg [animations](https://youtube.com/jaylymc) and [terminator addon](https://github.com/Jaylydev/terminator). It's time to move on. 
+
+It was fun to develop this and actually got 50,000 people to download this.
+
+Pull requests are still being reviewed and merged by me, if anyone wanna contribute this.
+
+- JaylyMC (25/1/2022)
+
 ## Description
 You activate the Add-on on a brand new world. There is one Speedrunner and one Hunter (or more). You should play this game in complete **survival vanilla Minecraft**. 
 
