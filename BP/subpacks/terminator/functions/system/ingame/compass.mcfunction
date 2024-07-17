@@ -1,1 +1,0 @@
-tellraw @s {"rawtext":[{"text": "§cYou do not have permission to use this command"}]}

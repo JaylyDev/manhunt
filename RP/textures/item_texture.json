@@ -1,0 +1,102 @@
+{
+  "resource_pack_name": "manhunt",
+  "texture_data": {
+    "compass_0": {
+      "textures": "textures/items/compass_0"
+    },
+    "compass_1": {
+      "textures": "textures/items/compass_1"
+    },
+    "compass_2": {
+      "textures": "textures/items/compass_2"
+    },
+    "compass_3": {
+      "textures": "textures/items/compass_3"
+    },
+    "compass_4": {
+      "textures": "textures/items/compass_4"
+    },
+    "compass_5": {
+      "textures": "textures/items/compass_5"
+    },
+    "compass_6": {
+      "textures": "textures/items/compass_6"
+    },
+    "compass_7": {
+      "textures": "textures/items/compass_7"
+    },
+    "compass_8": {
+      "textures": "textures/items/compass_8"
+    },
+    "compass_9": {
+      "textures": "textures/items/compass_9"
+    },
+    "compass_10": {
+      "textures": "textures/items/compass_10"
+    },
+    "compass_11": {
+      "textures": "textures/items/compass_11"
+    },
+    "compass_12": {
+      "textures": "textures/items/compass_12"
+    },
+    "compass_13": {
+      "textures": "textures/items/compass_13"
+    },
+    "compass_14": {
+      "textures": "textures/items/compass_14"
+    },
+    "compass_15": {
+      "textures": "textures/items/compass_15"
+    },
+    "compass_16": {
+      "textures": "textures/items/compass_16"
+    },
+    "compass_17": {
+      "textures": "textures/items/compass_17"
+    },
+    "compass_18": {
+      "textures": "textures/items/compass_18"
+    },
+    "compass_19": {
+      "textures": "textures/items/compass_19"
+    },
+    "compass_20": {
+      "textures": "textures/items/compass_20"
+    },
+    "compass_21": {
+      "textures": "textures/items/compass_21"
+    },
+    "compass_22": {
+      "textures": "textures/items/compass_22"
+    },
+    "compass_23": {
+      "textures": "textures/items/compass_23"
+    },
+    "compass_24": {
+      "textures": "textures/items/compass_24"
+    },
+    "compass_25": {
+      "textures": "textures/items/compass_25"
+    },
+    "compass_26": {
+      "textures": "textures/items/compass_26"
+    },
+    "compass_27": {
+      "textures": "textures/items/compass_27"
+    },
+    "compass_28": {
+      "textures": "textures/items/compass_28"
+    },
+    "compass_29": {
+      "textures": "textures/items/compass_29"
+    },
+    "compass_30": {
+      "textures": "textures/items/compass_30"
+    },
+    "compass_31": {
+      "textures": "textures/items/compass_31"
+    }
+  },
+  "texture_name": "atlas.items"
+}

@@ -1,61 +1,71 @@
 {
-	"format_version": 2,
-	"header": {
-		"description": "Addon By §eJayly§r\nhttps://mcpedl.com/minecraft-manhunt\nVersion: 1.7.2",
-		"name": "Minecraft Manhunt [BP]",
-		"uuid": "1340e32a-ccf2-4f2f-b84d-c6bf3a6795b6",
-		"version": [ 1, 7, 2 ], // this variable represents addon version
-		"min_engine_version": [ 1, 16, 220 ]
-	},
-	"modules": [
-		{
-			"description": "Addon By §eJayly§r\nhttps://mcpedl.com/minecraft-manhunt\nVersion: 1.7.2",
-			"type": "data",
-			"uuid": "a5684d11-d349-4d74-9343-36194e8e75cb",
-			"version": [ 1, 7, 2 ]
-		}
-	],
-	"subpacks": [
-		{
-			"folder_name": "terminator",
-			"name": "§cTerminator Manhunt",
-			"memory_tier": 1
-		},
-		{
-			"folder_name": "assassin",
-			"name": "§6Minecraft Assassin",
-			"memory_tier": 1
-		},
-		{
-			"folder_name": "randomitem",
-			"name": "§6Minecraft Item Randomizer",
-			"memory_tier": 1
-		},
-		{
-			"folder_name": "juggernaut",
-			"name": "§6Minecraft Juggernaut",
-			"memory_tier": 1
-		},
-		{
-			"folder_name": "hitmen",
-			"name": "§6Minecraft Hitmen",
-			"memory_tier": 1
-		},
-		{
-			"folder_name": "default",
-			"name": "§6Minecraft Manhunt",
-			"memory_tier": 1
-		}
-	],
-	"dependencies": [
-		{
-			"uuid": "fc469f4b-29f9-4b13-9e8f-5130e3b9cd90",
-			"version": [ 1, 7, 2 ]
-		}
-	],
-	"metadata": {
-		"authors": [ "Jayly" ],
-		"url": "https://mcpedl.com/minecraft-manhunt",
-		"license": "https://github.com/JaylyDev/manhunt/blob/main/LICENSE"
-	}
+  "format_version": 2,
+  "header": {
+    "description": "Addon By §eJaylyMC§r\nhttps://jaylydev.github.io/posts/minecraft-manhunt/\nVersion: 1.21.0",
+    "name": "Minecraft Manhunt [BP]",
+    "uuid": "1340e32a-ccf2-4f2f-b84d-c6bf3a6795b6",
+    "version": [1, 21, 0], // this variable represents addon version
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "description": "Addon By §eJaylyMC§r\nhttps://jaylydev.github.io/posts/minecraft-manhunt/\nVersion: 1.21.0",
+      "type": "script",
+      "entry": "scripts/index.js",
+      "language": "javascript",
+      "uuid": "a5684d11-d349-4d74-9343-36194e8e75cb",
+      "version": [1, 21, 0]
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "terminator_manhunt",
+      "name": "§cTerminator Manhunt",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "assassin",
+      "name": "§6Minecraft Assassin",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "randomitem",
+      "name": "§6Minecraft Item Randomizer",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "juggernaut",
+      "name": "§6Minecraft Juggernaut",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "hitmen",
+      "name": "§6Minecraft Hitmen",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "manhunt",
+      "name": "§6Minecraft Manhunt",
+      "memory_tier": 1
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "fc469f4b-29f9-4b13-9e8f-5130e3b9cd90",
+      "version": [1, 21, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.3.0-beta"
+    }
+  ],
+  "metadata": {
+    "authors": ["Jayly"],
+    "url": "https://jaylydev.github.io/posts/minecraft-manhunt/",
+    "license": "MIT"
+  }
 }
