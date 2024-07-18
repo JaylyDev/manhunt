@@ -6,14 +6,14 @@ execute as @a[tag=game_is_running] -500 ~ ~ fill ~ 0 ~-7 ~ 255 ~7 stained_glass 
 execute as @a[tag=game_is_running] ~ ~ 500 fill ~-7 0 ~ ~7 255 ~ stained_glass 11
 execute as @a[tag=game_is_running] ~ ~ -500 fill ~-7 0 ~ ~7 255 ~ stained_glass 11
 
-execute as @a ~ ~ ~ execute as @a[x=500,dx=2147483147,tag=game_is_running] run tellraw @s {"rawtext":[{"text": "§cError§r: You are not permitted to enter this area."}]}
-execute as @a ~ ~ ~  execute as @a[x=-500,dx=-2147483147,tag=game_is_running] run tellraw @s {"rawtext":[{"text": "§cError§r: You are not permitted to enter this area."}]}
-execute as @a ~ ~ ~  execute as @a[z=500,dz=2147483147,tag=game_is_running] run tellraw @s {"rawtext":[{"text": "§cError§r: You are not permitted to enter this area."}]}
-execute as @a ~ ~ ~ execute as @a[z=-500,dz=-2147483147,tag=game_is_running] run tellraw @s {"rawtext":[{"text": "§cError§r: You are not permitted to enter this area."}]}
-execute as @a ~~~ tp @s[x=500,dx=2147483147,tag=game_is_running] 495 ~ ~
-execute as @a ~~~ tp @s[x=-500,dx=-2147483147,tag=game_is_running] -495 ~ ~
-execute as @a ~~~ tp @s[z=500,dz=2147483147,tag=game_is_running] ~ ~ 495
-execute as @a ~~~ tp @s[z=-500,dz=-2147483147,tag=game_is_running] ~ ~ -495
+execute as @a run execute as @a[x=500,dx=2147483147,tag=game_is_running] run tellraw @s {"rawtext":[{"text": "§cError§r: You are not permitted to enter this area."}]}
+execute as @a run execute as @a[x=-500,dx=-2147483147,tag=game_is_running] run tellraw @s {"rawtext":[{"text": "§cError§r: You are not permitted to enter this area."}]}
+execute as @a run execute as @a[z=500,dz=2147483147,tag=game_is_running] run tellraw @s {"rawtext":[{"text": "§cError§r: You are not permitted to enter this area."}]}
+execute as @a run execute as @a[z=-500,dz=-2147483147,tag=game_is_running] run tellraw @s {"rawtext":[{"text": "§cError§r: You are not permitted to enter this area."}]}
+execute as @a at @s positioned ~~~ run tp @s[x=500,dx=2147483147,tag=game_is_running] 495 ~ ~
+execute as @a at @s positioned ~~~ run tp @s[x=-500,dx=-2147483147,tag=game_is_running] -495 ~ ~
+execute as @a at @s positioned ~~~ run tp @s[z=500,dz=2147483147,tag=game_is_running] ~ ~ 495
+execute as @a at @s positioned ~~~ run tp @s[z=-500,dz=-2147483147,tag=game_is_running] ~ ~ -495
 
 ## The item randomizers
 scoreboard players remove @a[tag=host,tag=game_is_running,scores={item_cd=1..2400}] item_cd 1

@@ -31,4 +31,4 @@ gamerule drowningdamage true
 gamerule firedamage true
 effect @a instant_health 0 0 true
 effect @a weakness 0 0 true
-execute as @a ~~~ detect ~~-1~ air 0 effect @s slow_falling 30 0 true
+execute as @a at @s if block ~~-1~ air[] run effect @s slow_falling 30 0 true

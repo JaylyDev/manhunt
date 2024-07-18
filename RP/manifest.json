@@ -15,6 +15,38 @@
             "version": [ 1, 8, 0 ]
         }
     ],
+	"subpacks": [
+		{
+			"folder_name": "terminator",
+			"name": "§cTerminator Manhunt",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "assassin",
+			"name": "§6Minecraft Assassin",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "randomitem",
+			"name": "§6Minecraft Item Randomizer",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "juggernaut",
+			"name": "§6Minecraft Juggernaut",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "hitmen",
+			"name": "§6Minecraft Hitmen",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "default",
+			"name": "§6Minecraft Manhunt",
+			"memory_tier": 1
+		}
+	],
     "dependencies": [
       {
         "uuid": "1340e32a-ccf2-4f2f-b84d-c6bf3a6795b6",

@@ -1,7 +1,7 @@
 execute as @a[tag=host] run scoreboard players set @s players 0
 execute as @a[tag=host] run scoreboard players set @s speedrunners 0
 execute as @a[tag=host] run scoreboard players set @s hunters 0
-execute as @a ~ ~ ~ execute as @a[tag=host] run scoreboard players add @s players 1
+execute as @a run execute as @a[tag=host] run scoreboard players add @s players 1
 execute as @a[tag=speedrunner] run execute as @a[tag=host] run scoreboard players add @s speedrunners 1
 execute as @a[tag=hunter] run execute as @a[tag=host] run scoreboard players add @s hunters 1
 effect @a[tag=!game_is_running] instant_health 60 255 true
