@@ -1,5 +1,5 @@
 ## Start the manhunt
-execute @a[tag=host] ~ ~ ~ summon entity:terminator
+execute as @a[tag=host] run summon entity:terminator
 tag @a add speedrunner
 tag @e[type=entity:terminator] add hunter
 tag @a add game_is_running
@@ -16,13 +16,13 @@ tellraw @a {"rawtext":[{"text":"§cTerminators have a working compass to track t
 tellraw @a {"rawtext":[{"text":"§cThey also have unlimited amount of regeneration."}]}
 
 ## miscs
-execute @a[tag=host] ~~~ spreadplayers ~ ~ 0 10 @a
-execute @a[tag=host] ~~~ setworldspawn ~ ~ ~
-execute @a[tag=host] ~~~ spawnpoint @a ~ ~ ~
+execute as @a[tag=host] run spreadplayers ~ ~ 0 10 @a
+execute as @a[tag=host] run setworldspawn ~ ~ ~
+execute as @a[tag=host] run spawnpoint @a ~ ~ ~
 scoreboard players set @a compass_cd 0
 gamerule pvp true
 gamerule falldamage true
 gamerule drowningdamage true
 gamerule firedamage true
 effect @a instant_health 0 0 true
-effect @a strength 0 0 true
+effect @a weakness 0 0 true

@@ -32,7 +32,7 @@ tellraw @s {"rawtext":[{"text":"§cWhoever execute command §r§l/function start
 tellraw @s {"rawtext":[{"text":"§ePlease make sure that you do NOT leave until the game ends, or the game will corrupt."}]}
 tellraw @s {"rawtext":[{"text":"―――――――――――――――――"}]}
 tellraw @s {"rawtext":[{"text":"§aMore info at: §bhttps://mcpedl.com/minecraft-manhunt"}]}
-tellraw @s {"rawtext":[{"text":"§aSupport Discord Server: §bhttps://discord.gg/Xn8TCJWA"}]}
+tellraw @s {"rawtext":[{"text":"§aSupport Discord Server: §bhttps://discord.gg/8xzSHD84xv"}]}
 tellraw @s {"rawtext":[{"text":"―――――――――――――――――"}]}
 tellraw @s {"rawtext":[{"text":"§cWarning: §bThis Add-On requires the Terminator Add-On in order for the game to run successfully.\nThis gamemode is still in beta, any bugs and suggestions should report to https://github.com/JaylyDev/manhunt/issues/new/choose."}]}
 tag @s add host

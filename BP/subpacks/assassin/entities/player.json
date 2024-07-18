@@ -310,17 +310,17 @@
         }
       },
       "manhunt:speedrunner_death": {
-        "run_command": {
+        "queue_command": {
           "command": [ "function system/ingame/speedrunnerdeath" ]
         }
       },
       "manhunt:hunter_death": {
-        "run_command": {
+        "queue_command": {
           "command": [ "function system/ingame/hunterdeath" ]
         }
       },
       "manhunt:freeze_assassin": {
-        "run_command": {
+        "queue_command": {
           "command": [ "tp ~~~" ]
         }
       }

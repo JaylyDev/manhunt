@@ -58,7 +58,7 @@ Special thanks to:
 ## Questions, Bugs and Feedbacks
 Want to report a bug or suggest new features for the addon? [Click Here](https://github.com/JaylyDev/manhunt/issues/new/choose)
 
-Please ask and answer questions [here](https://discord.gg/Xn8TCJWA)
+Please ask and answer questions [here](https://discord.gg/8xzSHD84xv)
 
 ## License
 Copyright (c) JaylyDev. All rights reserved.
