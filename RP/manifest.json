@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "header": {
-        "description": "Addon By §eJayly§r\nhttps://mcpedl.com/minecraft-manhunt\nVersion: 1.8.0",
+        "description": "Addon by JaylyMC. https://jaylydev.github.io/posts/minecraft-manhunt/. Version: 1.8.0",
         "name": "Minecraft Manhunt [RP]",
         "uuid": "fc469f4b-29f9-4b13-9e8f-5130e3b9cd90",
         "version": [ 1, 8, 0 ], // this variable represents addon version
@@ -9,7 +9,7 @@
     },
     "modules": [
         {
-            "description": "Addon By §eJayly§r\nhttps://mcpedl.com/minecraft-manhunt\nVersion: 1.8.0",
+            "description": "Addon by JaylyMC. https://jaylydev.github.io/posts/minecraft-manhunt/. Version: 1.8.0",
             "type": "resources",
             "uuid": "4e6658e0-a844-4521-96a2-8c9abff30895",
             "version": [ 1, 8, 0 ]
@@ -55,7 +55,7 @@
     ],
     "metadata": {
         "authors": ["JaylyMC"],
-        "url": "https://mcpedl.com/minecraft-manhunt",
+        "url": "https://jaylydev.github.io/posts/minecraft-manhunt/",
         "license": "https://github.com/JaylyDev/manhunt/blob/main/LICENSE"
     }
 }
