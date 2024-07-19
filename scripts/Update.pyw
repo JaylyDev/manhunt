@@ -8,6 +8,7 @@ version_0_max = [0, 0, 77]
 
 #functions import
 import getpass
+import os
 import tkinter
 from distutils.dir_util import copy_tree
 from distutils import log
@@ -56,9 +57,9 @@ def restart_minecraft():
     else: pass
 
 username = getpass.getuser()
-fromDirectory_rp = "C:\\Users\\" + username + "\\Documents\\GitHub\\manhunt\\RP"
+fromDirectory_rp = f"{os.getcwd()}\\RP"
 toDirectory_rp = "C:\\Users\\" + username + "\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\resource_packs\\MinecraftM"
-fromDirectory_bp = "C:\\Users\\" + username + "\\Documents\\GitHub\\manhunt\\BP"
+fromDirectory_bp = f"{os.getcwd()}\\BP"
 toDirectory_bp = "C:\\Users\\" + username + "\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\behavior_packs\\MinecraftM"
 logEnabled = False
 

@@ -5,13 +5,21 @@
 		"name": "Minecraft Manhunt [BP]",
 		"uuid": "1340e32a-ccf2-4f2f-b84d-c6bf3a6795b6",
 		"version": [ 1, 8, 0 ], // this variable represents addon version
-		"min_engine_version": [ 1, 20, 60 ]
+		"min_engine_version": [ 1, 20, 70 ]
 	},
 	"modules": [
 		{
 			"description": "Addon by JaylyMC. https://jaylydev.github.io/posts/minecraft-manhunt/. Version: 1.8.0",
 			"type": "data",
 			"uuid": "a5684d11-d349-4d74-9343-36194e8e75cb",
+			"version": [ 1, 8, 0 ]
+		},
+		{
+			"type": "script",
+			"description": "Addon by JaylyMC. https://jaylydev.github.io/posts/minecraft-manhunt/. Version: 1.8.0",
+			"uuid": "6574dbf1-7a8c-41f6-979e-3c73c6aa5750",
+			"language": "javascript",
+			"entry": "scripts/index.js",
 			"version": [ 1, 8, 0 ]
 		}
 	],
@@ -51,6 +59,10 @@
 		{
 			"uuid": "fc469f4b-29f9-4b13-9e8f-5130e3b9cd90",
 			"version": [ 1, 8, 0 ]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.9.0"
 		}
 	],
 	"metadata": {

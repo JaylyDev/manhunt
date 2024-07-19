@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.70",
+  "minecraft:item": {
+    "description": {
+      "identifier": "jayly:compass_17",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "compass_17"
+        }
+      },
+      "minecraft:hand_equipped": {
+        "value": true
+      },
+      "minecraft:allow_off_hand": {
+        "value": true
+      },
+      "minecraft:can_destroy_in_creative": {
+        "value": true
+      },
+      "minecraft:display_name": {
+        "value": "item.compass.name"
+      },
+      "minecraft:max_stack_size": {
+        "value": 1
+      }
+    }
+  }
+}
