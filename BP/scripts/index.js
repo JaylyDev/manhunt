@@ -45,10 +45,11 @@ system.runInterval(() => {
 
     for (let slotIndex = 0; slotIndex < inventory.inventorySize; slotIndex++) {
       const slot = inventory.container.getSlot(slotIndex);
-      if (!CompassItemTypes.includes(slot.getItem()?.typeId)) continue;
+      const item = slot.getItem();
+      if (!item || !CompassItemTypes.includes(item.typeId)) continue;
       
       const compass = getCompassItem(player.getRotation(), player.location, { x: 0, y: 0, z: 0 });
-      slot.setItem(compass);
+      if (item.typeId !== compass.typeId) slot.setItem(compass);
     }
 
     /**
@@ -57,10 +58,11 @@ system.runInterval(() => {
     // @ts-ignore
     const equippable = player.getComponent(EntityEquippableComponent.componentId);
     const offhand = equippable.getEquipmentSlot(EquipmentSlot.Offhand);
+    const item = offhand.getItem();
 
-    if (CompassItemTypes.includes(offhand.getItem()?.typeId)) {
-      const compass = getCompassItem(player.getRotation(), player.location, { x: 0, y: 0, z: 0 });
-      offhand.setItem(compass);
-    }
+    if (!item || !CompassItemTypes.includes(item.typeId)) continue;
+
+    const compass = getCompassItem(player.getRotation(), player.location, { x: 0, y: 0, z: 0 });
+    if (item.typeId !== compass.typeId) offhand.setItem(compass);
   }
-})
+}, 2)

@@ -60,10 +60,11 @@ export function getCompassItem(rotation, location, pointLocation) {
     bearing = 3 / 2 * Math.PI + Math.atan(displacement.z / displacement.x);
   }
 
-  const backBearing = Math.PI + rotation.y * Math.PI / 180;
-  let index = Math.floor(bearing - backBearing / (Math.PI * 2 / CompassItemTypes.length));
-  if (index < 0 || index > Math.PI * 2) index = Math.abs(CompassItemTypes.length - index) - 1;
-  
+  const playerRotY = rotation.y * Math.PI / 180 + Math.PI;
+  const diffAngle = bearing - playerRotY;
+  const innerAngle = (diffAngle < 0) ? 2 * Math.PI + diffAngle : diffAngle;
+  const index = Math.floor(innerAngle / (2 * Math.PI) * CompassItemTypes.length + 16) % CompassItemTypes.length;
   const item = new ItemStack(CompassItemTypes[index]);
+
   return item;
 }
