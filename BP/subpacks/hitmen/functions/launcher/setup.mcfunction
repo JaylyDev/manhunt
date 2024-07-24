@@ -1,6 +1,5 @@
 # change players settings
 scoreboard objectives add players dummy
-scoreboard objectives add compass_cd dummy
 scoreboard objectives add time_t dummy
 scoreboard objectives add time_s dummy
 scoreboard objectives add time_m dummy
@@ -35,8 +34,8 @@ tellraw @s {"rawtext":[{"text":"――――――――――――――――
 tellraw @s {"rawtext":[{"text":"§cWhoever execute command §r§l/function start §r§cbecomes a speedrunner, and the rest are hunters."}]}
 tellraw @s {"rawtext":[{"text":"§ePlease make sure that you do NOT leave until the game ends, or the game will corrupt."}]}
 tellraw @s {"rawtext":[{"text":"―――――――――――――――――"}]}
-tellraw @s {"rawtext":[{"text":"§aMore info at: §bhttps://mcpedl.com/minecraft-manhunt"}]}
-tellraw @s {"rawtext":[{"text":"§aSupport Discord Server: §bhttps://discord.gg/Xn8TCJWA"}]}
+tellraw @s {"rawtext":[{"text":"§aMore info at: §bhttps://jaylydev.github.io/posts/minecraft-manhunt/"}]}
+tellraw @s {"rawtext":[{"text":"§aSupport Discord Server: §bhttps://discord.gg/8xzSHD84xv"}]}
 tag @s add host
 tag @s add verified
 tag @s remove user

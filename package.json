@@ -1,0 +1,14 @@
+{
+  "name": "manhunt",
+  "version": "1.8.0",
+  "description": "minecraft manhunt",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "JaylyMC",
+  "license": "MIT",
+  "dependencies": {
+    "@minecraft/server": "^1.8.0"
+  }
+}
