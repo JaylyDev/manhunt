@@ -6,10 +6,9 @@
       "is_spawnable": false,
       "is_summonable": false,
       "is_experimental": false,
-      "scripts": {"animate": ["setup", "hunter_compass", "player_death"]},
+      "scripts": {"animate": ["setup", "player_death"]},
       "animations": {
         "setup": "controller.animation.setup",
-        "hunter_compass": "controller.animation.hunter_compass",
         "player_death": "controller.animation.player.death"
       }
     },

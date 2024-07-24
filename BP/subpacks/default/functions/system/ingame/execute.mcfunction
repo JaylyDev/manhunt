@@ -1,5 +1,4 @@
 gamemode survival @a[tag=game_is_running,m=!survival,tag=!dev]
-scoreboard players add @a[scores={compass_cd=1..}] compass_cd -1
 effect @a[tag=spectate] invisibility 10 255 true
 gamemode a @a[tag=game_is_running,tag=spectate]
 

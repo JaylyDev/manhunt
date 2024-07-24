@@ -1,4 +1,4 @@
-import { EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, system, world } from "@minecraft/server";
+import { EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, system, TicksPerSecond, world } from "@minecraft/server";
 import { CompassItemTypes, getCompassItem } from "./compass";
 
 system.runInterval(() => {
@@ -42,14 +42,16 @@ system.runInterval(() => {
      */
     // @ts-ignore
     const inventory = player.getComponent(EntityInventoryComponent.componentId);
+    const [ nearestSpeedrunner ] = player.dimension.getPlayers({ closest: 1, minDistance: 1, tags: ['game_is_running', 'speedrunner'], excludeTags: ['hunter'] });
+    const compass = getCompassItem(player.getRotation(), player.location, nearestSpeedrunner?.location ?? player.location);
+
+    if (nearestSpeedrunner && system.currentTick % TicksPerSecond === 0) player.onScreenDisplay.setActionBar('§cYou are tracking: §r§l' + nearestSpeedrunner.name);
 
     for (let slotIndex = 0; slotIndex < inventory.inventorySize; slotIndex++) {
-      const slot = inventory.container.getSlot(slotIndex);
-      const item = slot.getItem();
-      if (!item || !CompassItemTypes.includes(item.typeId)) continue;
+      const item = inventory.container.getItem(slotIndex);
+      if (!item || !CompassItemTypes.includes(item.typeId) || item.typeId === compass.typeId) continue;
       
-      const compass = getCompassItem(player.getRotation(), player.location, { x: 0, y: 0, z: 0 });
-      if (item.typeId !== compass.typeId) slot.setItem(compass);
+      inventory.container.setItem(slotIndex, compass);
     }
 
     /**
@@ -57,12 +59,9 @@ system.runInterval(() => {
      */
     // @ts-ignore
     const equippable = player.getComponent(EntityEquippableComponent.componentId);
-    const offhand = equippable.getEquipmentSlot(EquipmentSlot.Offhand);
-    const item = offhand.getItem();
+    const item = equippable.getEquipment(EquipmentSlot.Offhand);
 
     if (!item || !CompassItemTypes.includes(item.typeId)) continue;
-
-    const compass = getCompassItem(player.getRotation(), player.location, { x: 0, y: 0, z: 0 });
-    if (item.typeId !== compass.typeId) offhand.setItem(compass);
+    equippable.setEquipment(EquipmentSlot.Offhand, compass);
   }
-}, 2)
+}, 2);

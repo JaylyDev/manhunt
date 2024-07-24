@@ -8,16 +8,6 @@
         "manhunt_setup": {"on_entry": ["/function launcher/permission"]}
       }
     },
-    "controller.animation.hunter_compass":{
-      "initial_state": "compass_detect",
-      "states":{ 
-        "compass_detect":{"transitions":[{"holding_compass": "q.get_equipped_item_name == 'compass'" }]},
-        "holding_compass":{ 
-          "transitions":[{"compass_detect":"(1.0)"}],
-          "on_entry":[ "/function system/ingame/compass" ]
-        } 
-      } 
-    },
     "controller.animation.enderdragon.death":{ 
       "initial_state": "runtimes",
       "states":{ 

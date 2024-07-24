@@ -1,6 +1,5 @@
 # change players settings
 scoreboard objectives add players dummy
-scoreboard objectives add compass_cd dummy
 scoreboard objectives add speedrunners dummy
 scoreboard objectives add hunters dummy
 scoreboard objectives add graceperiod dummy

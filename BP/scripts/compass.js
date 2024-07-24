@@ -1,4 +1,4 @@
-import { ItemStack } from "@minecraft/server";
+import { ItemLockMode, ItemStack } from "@minecraft/server";
 import { Vector3Utils } from "./minecraft-math";
 
 export const CompassItemTypes = [
@@ -63,8 +63,11 @@ export function getCompassItem(rotation, location, pointLocation) {
   const playerRotY = rotation.y * Math.PI / 180 + Math.PI;
   const diffAngle = bearing - playerRotY;
   const innerAngle = (diffAngle < 0) ? 2 * Math.PI + diffAngle : diffAngle;
-  const index = Math.floor(innerAngle / (2 * Math.PI) * CompassItemTypes.length + 16) % CompassItemTypes.length;
+  const index = Math.floor(innerAngle / (2 * Math.PI) * CompassItemTypes.length + 16) % CompassItemTypes.length || Math.floor(Math.random() * CompassItemTypes.length);
+  
   const item = new ItemStack(CompassItemTypes[index]);
+  item.lockMode = ItemLockMode.inventory;
+  item.keepOnDeath = true;
 
   return item;
 }

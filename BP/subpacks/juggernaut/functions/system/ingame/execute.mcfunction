@@ -1,5 +1,4 @@
 gamemode survival @a[tag=game_is_running,m=!survival,tag=!dev]
-scoreboard players add @a[scores={compass_cd=1..}] compass_cd -1
 
 execute as @a[tag=host,tag=game_is_running,scores={graceperiod=1,gptimer=1200}] run tellraw @a {"rawtext":[{"text": "Enabling §3PvP§r in §31 minute"}]}
 execute as @a[tag=host,tag=game_is_running,scores={graceperiod=1,gptimer=0}] run tellraw @a {"rawtext":[{"text": "§3PvP§r is now enabled"}]}

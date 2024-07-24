@@ -21,7 +21,6 @@ tellraw @a {"rawtext":[{"text":"§c§lRules§r: Every item dropped on the ground
 execute as @a[tag=host] run spreadplayers 0 0 0 10 @a
 execute as @a[tag=host] run setworldspawn 0 64 0
 execute as @a[tag=host] run spawnpoint @a 0 64 0
-scoreboard players set @a compass_cd 0
 scoreboard players set @a[tag=host] item_cd 2200
 scoreboard players set @s[tag=host,scores={graceperiod=1}] gptimer 1200
 execute as @a[tag=host,scores={graceperiod=0}] run gamerule pvp true

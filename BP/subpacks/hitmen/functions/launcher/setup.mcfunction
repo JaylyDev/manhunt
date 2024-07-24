@@ -1,6 +1,5 @@
 # change players settings
 scoreboard objectives add players dummy
-scoreboard objectives add compass_cd dummy
 scoreboard objectives add time_t dummy
 scoreboard objectives add time_s dummy
 scoreboard objectives add time_m dummy

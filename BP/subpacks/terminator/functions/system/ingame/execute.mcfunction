@@ -1,5 +1,4 @@
 gamemode survival @a[tag=game_is_running,m=!survival,tag=!dev]
-scoreboard players add @a[scores={compass_cd=1..}] compass_cd -1
 execute as @a[tag=host] run scoreboard players set @s terminators 0
 execute as @e[type=entity:terminator] run execute as @a[tag=host] run scoreboard players add @s terminators 1
 execute as @a[tag=host] run scoreboard players set @s speedrunners 0

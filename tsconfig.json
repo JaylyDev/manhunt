@@ -9,5 +9,6 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true
   },
-  "include": ["BP/scripts/**/*.js"]
+  "include": ["BP/scripts/**/*.js"],
+  "exclude": ["BP/scripts/minecraft-math.js"]
 }

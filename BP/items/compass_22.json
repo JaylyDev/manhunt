@@ -13,9 +13,6 @@
           "default": "compass_22"
         }
       },
-      "minecraft:hand_equipped": {
-        "value": true
-      },
       "minecraft:allow_off_hand": {
         "value": true
       },

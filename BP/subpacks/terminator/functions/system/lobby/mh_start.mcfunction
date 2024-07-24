@@ -12,14 +12,13 @@ tellraw @a {"rawtext":[{"text":"§b§l"}, {"selector": "@a[tag=speedrunner,tag=g
 tellraw @a {"rawtext":[{"text":"§bIf "}, {"selector": "@e[type=entity:terminator,tag=game_is_running]"}, {"text":" beat Minecraft before killed by hunter(s), the speedrunner wins. If the speedrunner died, they lose."}]}
 tellraw @a {"rawtext":[{"text":"―――――――――――――――――"}]}
 tellraw @a {"rawtext":[{"text":"§c§lTerminator§r's goal is to kill the speedrunner before they beat Minecraft."}]}
-tellraw @a {"rawtext":[{"text":"§cTerminators have a working compass to track the speedrunner in the overworld."}]}
+tellraw @a {"rawtext":[{"text":"§cTerminators have a working compass to track the speedrunner in the same dimension."}]}
 tellraw @a {"rawtext":[{"text":"§cThey also have unlimited amount of regeneration."}]}
 
 ## miscs
 execute as @a[tag=host] run spreadplayers ~ ~ 0 10 @a
 execute as @a[tag=host] run setworldspawn ~ ~ ~
 execute as @a[tag=host] run spawnpoint @a ~ ~ ~
-scoreboard players set @a compass_cd 0
 gamerule pvp true
 gamerule falldamage true
 gamerule drowningdamage true

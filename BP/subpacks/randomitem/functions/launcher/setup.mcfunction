@@ -1,6 +1,5 @@
 # change players settings
 scoreboard objectives add players dummy
-scoreboard objectives add compass_cd dummy
 scoreboard objectives add item_cd dummy
 scoreboard objectives add random_item dummy
 scoreboard objectives add speedrunners dummy

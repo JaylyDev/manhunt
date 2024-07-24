@@ -5,7 +5,7 @@
 		"name": "Minecraft Manhunt [BP]",
 		"uuid": "1340e32a-ccf2-4f2f-b84d-c6bf3a6795b6",
 		"version": [ 1, 8, 0 ], // this variable represents addon version
-		"min_engine_version": [ 1, 20, 70 ]
+		"min_engine_version": [ 1, 20, 60 ]
 	},
 	"modules": [
 		{
@@ -62,7 +62,7 @@
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.9.0"
+			"version": "1.8.0"
 		}
 	],
 	"metadata": {

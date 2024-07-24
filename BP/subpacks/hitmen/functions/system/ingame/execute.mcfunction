@@ -1,5 +1,4 @@
 gamemode survival @a[tag=game_is_running,m=!survival,tag=!dev]
-scoreboard players add @a[scores={compass_cd=1..}] compass_cd -1
 # TIMER
 scoreboard players add @a[tag=host,tag=game_is_running,scores={time_t=0..20}] time_t -1
 scoreboard players add @a[tag=host,tag=game_is_running,scores={time_t=..-1}] time_s -1

@@ -1,5 +1,4 @@
 gamemode survival @a[tag=game_is_running,m=!survival,tag=!dev]
-scoreboard players add @a[scores={compass_cd=1..}] compass_cd -1
 ## The 1000x1000 Border
 execute as @a[tag=game_is_running] 500 ~ ~ fill ~ 0 ~-7 ~ 255 ~7 stained_glass 11
 execute as @a[tag=game_is_running] -500 ~ ~ fill ~ 0 ~-7 ~ 255 ~7 stained_glass 11

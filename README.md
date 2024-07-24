@@ -12,7 +12,7 @@ You activate the Add-on on a brand new world. There is one Speedrunner and one H
 
 **The Speedrunner's goal** is to beat Minecraft, if they beat Minecraft or before the timer ends which you haven't got killed by hunter(s), the speedrunner wins. If the speedrunner died, they lose instantly.
 
-**The Hunter's goal** is to kill the speedrunner by the end of beating Minecraft or the timer ends. Hunter(s) has/have a compass which can track the speedrunner. Remember the compass works only in the overworld dimension, or last location if the speedrunner is in the Nether. Also a reminder, hunter has unlimited life, each time they died they will receive a compass once they respawn.
+**The Hunter's goal** is to kill the speedrunner by the end of beating Minecraft or the timer ends. Hunter(s) has/have a compass which can track the speedrunner. Remember the compass works when a hunter and a speedrunner are both in same dimension. Also a reminder, hunter has unlimited life, each time they died they will receive a compass once they respawn.
 
 ## Downloads
 

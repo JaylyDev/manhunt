@@ -1,7 +1,6 @@
 # change players settings
 scoreboard objectives add players dummy
 scoreboard objectives add terminators dummy
-scoreboard objectives add compass_cd dummy
 scoreboard objectives add speedrunners dummy
 scoreboard objectives add graceperiod dummy
 scoreboard objectives add gptimer dummy
