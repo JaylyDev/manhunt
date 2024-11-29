@@ -1,6 +1,6 @@
 file = open("template.txt", "r")
 list_of_lines = file.readlines()
-line_count = 875
+line_count = 753
 index = 0
 while True:
   cooldown_timer = 0
